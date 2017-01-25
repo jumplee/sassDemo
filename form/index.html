@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>表单样式</title>
+  <link rel="stylesheet" href="form.css">
+  <style>
+    .x-form {
+
+      border: 2px solid #efefef;
+      /*border-top-width: 0;*/
+      padding: 15px;
+    }
+
+    .x-form-bottom {
+      margin-top: 25px;
+    }
+
+    .x-border-top {
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: orange;
+    }
+
+    .panel {
+      position: relative;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="panel">
+    <div class="x-border-top"></div>
+    <div class="x-form">
+      <div class="x-form-header">
+        表单
+      </div>
+      <div class="x-form-group">
+        <div class="x-form-label">姓名</div>
+        <input type="text" class="x-input x-input-text">
+      </div>
+      <div class="x-form-group">
+        <div class="x-form-label">密码</div>
+        <input type="password" class="x-input x-input-text">
+      </div>
+      <div class="x-form-group">
+        <div class="x-form-label">确认密码</div>
+        <input type="text" class="x-input x-input-text">
+      </div>
+      <div class="x-form-group">
+        <div class="x-form-label"></div>
+        <label for="test">
+        <input type="checkbox" class="x-checkbox" name="test" id="test">
+        是否同意协议
+        </label>
+      </div>
+      <div class="x-form-bottom">
+        <div class="x-btn">确认</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+

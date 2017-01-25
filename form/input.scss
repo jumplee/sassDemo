@@ -1,0 +1,18 @@
+
+.#{$prefix}-input{
+  font-size:.7rem;
+  border:0.05rem solid $border-color;
+  display: block;
+  outline:0;
+  border-radius: $input-radius;
+  flex:1;
+}
+.#{$prefix}-form-label{
+  padding: $input-padding 1.2rem $input-padding 0;
+  width:9rem;
+  color:#555;
+  // text-align:right;
+}
+.x-input-text{
+  padding: $input-padding 1rem;
+}

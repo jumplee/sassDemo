@@ -1,0 +1,67 @@
+@import "var";
+@import "common";
+@import "input";
+
+
+
+.#{$prefix}-form {}
+
+.#{$prefix}-form-header {
+  font-size: .9rem;
+  padding: 0.1rem 0 .5rem 0;
+}
+
+.#{$prefix}-form-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: .8rem;
+}
+
+.#{$prefix}-btn {
+  -webkit-appearance: none;
+  cursor: default;
+  display: inline-block;
+  border-radius: 0.2rem;
+  background-color: #eee;
+  border: .05rem solid #ccc;
+  padding: 0.4rem .9rem;
+  // &:hover{
+  //   transition: color .2s ease-in;
+  //   color:#444;
+  // }
+  &:active {
+    background-color: darken($button-color, 5%);
+    color: #444;
+  }
+}
+
+.#{$prefix}-checkbox {
+  outline: 0;
+  -webkit-appearance: none;
+  user-select: none;
+  border: 1px solid $border-color;
+  height: 1.6rem;
+  width: 1.6rem;
+  position: relative;
+  margin:0 .5rem;
+  &:after {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+  &:checked {
+    &:after {
+      transition: background-color .3s ease-out;
+      background-color: $theme-color;
+    }
+  }
+}
+
+.x-form {
+  label{
+    line-height: 2.5rem;
+  }
+}

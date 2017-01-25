@@ -1,0 +1,67 @@
+html {
+  font-size: 20px; }
+
+body {
+  font-size: .8rem; }
+
+.x-input {
+  font-size: .7rem;
+  border: 0.05rem solid #cecece;
+  display: block;
+  outline: 0;
+  border-radius: 0.3rem;
+  flex: 1; }
+
+.x-form-label {
+  padding: 0.8rem 1.2rem 0.8rem 0;
+  width: 9rem;
+  color: #555; }
+
+.x-input-text {
+  padding: 0.8rem 1rem; }
+
+.x-form-header {
+  font-size: .9rem;
+  padding: 0.1rem 0 .5rem 0; }
+
+.x-form-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: .8rem; }
+
+.x-btn {
+  -webkit-appearance: none;
+  cursor: default;
+  display: inline-block;
+  border-radius: 0.2rem;
+  background-color: #eee;
+  border: .05rem solid #ccc;
+  padding: 0.4rem .9rem; }
+  .x-btn:active {
+    background-color: #e1e1e1;
+    color: #444; }
+
+.x-checkbox {
+  outline: 0;
+  -webkit-appearance: none;
+  user-select: none;
+  border: 1px solid #cecece;
+  height: 1.6rem;
+  width: 1.6rem;
+  position: relative;
+  margin: 0 .5rem; }
+  .x-checkbox:after {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 2px;
+    left: 2px; }
+  .x-checkbox:checked:after {
+    transition: background-color .3s ease-out;
+    background-color: orange; }
+
+.x-form label {
+  line-height: 2.5rem; }
+
+/*# sourceMappingURL=form.css.map */
