@@ -2,12 +2,10 @@
 @import "common";
 @import "input";
 
-
-
 .#{$prefix}-form {}
 
 .#{$prefix}-form-header {
-  font-size: .9rem;
+  font-size: 18px;
   padding: 0.1rem 0 .5rem 0;
 }
 
@@ -46,8 +44,8 @@
   margin:0 .5rem;
   &:after {
     content: '';
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 12px;
+    height: 12px;
     position: absolute;
     top: 2px;
     left: 2px;
@@ -62,6 +60,6 @@
 
 .x-form {
   label{
-    line-height: 2.5rem;
+    line-height: 30px;
   }
 }
