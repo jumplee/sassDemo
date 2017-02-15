@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>左侧固定宽度右侧自适应宽度</title>
   <style>
+    body{
+      margin:0;
+    }
     .left{
      background: rgb(63, 63, 60);
       color:white;
@@ -16,20 +19,25 @@
     .right{
       padding:15px;
       background: #fafafa;
+      height:2000px;
     }
     /*--
     核心代码
     */
     .main{
-      display: flex;
+      position: relative;
       width:100%;
     }
     .left{
-      box-sizing:border-box;
+      position: fixed;
+      top:0;
+      left:0;
       width:200px;
+      box-sizing:border-box;
+      height:100%;
     }
     .right{
-      flex:1;
+      margin-left:200px;
       min-height:300px;
     }
   </style>
