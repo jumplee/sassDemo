@@ -1,0 +1,85 @@
+.d-switch-inner {
+  width: 52px;
+  height: 31px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  background-color: #fdfdfd;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  user-select: none; }
+  .d-switch-inner:before {
+    content: '';
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+
+.d-switch-label {
+  display: inline-block;
+  line-height: 29px;
+  vertical-align: top;
+  margin-left: 5px; }
+
+.d-switch {
+  display: inline-block; }
+  .d-switch.selected .d-switch-inner {
+    border-color: #64bd63;
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #64bd63; }
+    .d-switch.selected .d-switch-inner:before {
+      left: 21px; }
+  .d-switch.d-switch-animbg .d-switch-inner {
+    transition: background-color ease 0.4s; }
+    .d-switch.d-switch-animbg .d-switch-inner:before {
+      transition: left 0.3s; }
+  .d-switch.d-switch-animbg.selected .d-switch-inner {
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    background-color: #64bd63;
+    transition: border-color 0.4s, background-color ease 0.4s; }
+    .d-switch.d-switch-animbg.selected .d-switch-inner:before {
+      transition: left 0.3s; }
+  .d-switch.d-switch-anim .d-switch-inner {
+    transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s; }
+    .d-switch.d-switch-anim .d-switch-inner:before {
+      transition: left 0.3s; }
+  .d-switch.d-switch-anim.selected .d-switch-inner {
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #64bd63;
+    transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s; }
+    .d-switch.d-switch-anim.selected .d-switch-inner:before {
+      transition: left 0.3s; }
+
+.d-checkbox {
+  vertical-align: top;
+  display: inline-block; }
+  .d-checkbox .d-checkbox-inner {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 50%; }
+    .d-checkbox .d-checkbox-inner:before {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      left: 3px;
+      top: 3px;
+      content: ' ';
+      background: #64bd63;
+      border-radius: 50%;
+      display: none; }
+  .d-checkbox .d-checkbox-label {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: top; }
+
+/*# sourceMappingURL=switch.css.map */
