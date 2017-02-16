@@ -3,13 +3,10 @@ $radius:20px;
 $duration: .4s;
 $checkedColor: #64bd63;
 $lineHeight:30px;
-$width:52px;
-$height:29px;
-// $checkedColor: #005fbd;
+//$checkedColor: #005fbd;
 .d-switch-inner {
-   margin-top:($lineHeight - $height)/2;
-    width: $width;
-    height: $height;
+    width: 52px;
+    height: 31px;
     position: relative;
     border: 1px solid #dfdfdf;
     background-color: #fdfdfd;
@@ -17,15 +14,17 @@ $height:29px;
     border-radius: $radius;
     background-clip: content-box;
     display: inline-block;
+    //   -webkit-appearance: none;
     user-select: none;
+    //   outline: none;
     &:before {
         content: '';
-        width: $height - 2px;
-        height: $height - 2px;
+        width: 29px;
+        height: 29px;
         position: absolute;
-        top: 0;
+        top: 0px;
         left: 0;
-        border-radius: 50%;
+        border-radius: $radius;
         background-color: #fff;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     }
@@ -46,7 +45,7 @@ $height:29px;
             box-shadow: $checkedColor 0 0 0 16px inset;
             background-color: $checkedColor;
             &:before {
-                left: $width - $height;
+                left: 21px;
             }
         }
     }
@@ -62,6 +61,9 @@ $height:29px;
                 box-shadow: #dfdfdf 0 0 0 0 inset;
                 background-color: $checkedColor;
                 transition: border-color $duration, background-color ease $duration;
+                &:before {
+                    transition: left 0.3s;
+                }
             }
         }
     }
@@ -77,6 +79,9 @@ $height:29px;
                 box-shadow: $checkedColor 0 0 0 16px inset;
                 background-color: $checkedColor;
                 transition: border ease $duration, box-shadow ease $duration, background-color ease $duration*3;
+                &:before {
+                    transition: left 0.3s;
+                }
             }
         }
     }

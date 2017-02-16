@@ -15,8 +15,9 @@
   content: "\e677"; }
 
 .d-switch-inner {
+  margin-top: 0.5px;
   width: 52px;
-  height: 31px;
+  height: 29px;
   position: relative;
   border: 1px solid #dfdfdf;
   background-color: #fdfdfd;
@@ -27,12 +28,12 @@
   user-select: none; }
   .d-switch-inner:before {
     content: '';
-    width: 29px;
-    height: 29px;
+    width: 27px;
+    height: 27px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
-    border-radius: 20px;
+    border-radius: 50%;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
 
@@ -49,7 +50,7 @@
     box-shadow: #64bd63 0 0 0 16px inset;
     background-color: #64bd63; }
     .d-switch.selected .d-switch-inner:before {
-      left: 21px; }
+      left: 23px; }
   .d-switch.d-switch-animbg .d-switch-inner {
     transition: background-color ease 0.4s; }
     .d-switch.d-switch-animbg .d-switch-inner:before {
@@ -58,8 +59,6 @@
     box-shadow: #dfdfdf 0 0 0 0 inset;
     background-color: #64bd63;
     transition: border-color 0.4s, background-color ease 0.4s; }
-    .d-switch.d-switch-animbg.selected .d-switch-inner:before {
-      transition: left 0.3s; }
   .d-switch.d-switch-anim .d-switch-inner {
     transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s; }
     .d-switch.d-switch-anim .d-switch-inner:before {
@@ -68,11 +67,8 @@
     box-shadow: #64bd63 0 0 0 16px inset;
     background-color: #64bd63;
     transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s; }
-    .d-switch.d-switch-anim.selected .d-switch-inner:before {
-      transition: left 0.3s; }
 
 .d-radio {
-  display: flex;
   vertical-align: top;
   display: inline-block; }
   .d-radio .d-radio-inner {
@@ -103,7 +99,6 @@
     display: block; }
 
 .d-checkbox {
-  display: flex;
   vertical-align: top;
   display: inline-block; }
   .d-checkbox .d-checkbox-inner {
