@@ -1,0 +1,45 @@
+.d-radio {
+      display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    vertical-align: top;
+    $height: 20px;
+    $padding: 3px;
+    $border-radius: 50%;
+    display: inline-block;
+    .d-radio-inner {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        width: $height;
+        height: $height;
+        background: white;
+        border: 1px solid gray;
+        border-radius: $border-radius;
+        margin-top:($lineHeight - $height)/2;
+        // @debug $height - 2px - ($padding * 2);
+        &:before {
+            position: absolute;
+            width: $height - 2px - ($padding * 2);
+            height: $height - 2px - ($padding * 2);
+            left: $padding;
+            top: $padding;
+            content: ' ';
+            background: $checkedColor;
+            border-radius: $border-radius;
+            display: none;
+        }
+    }
+    .d-radio-label {
+        display: inline-block;
+        line-height: $height;
+        vertical-align: top;
+    }
+    &.selected {
+        .d-radio-inner {
+            &:before {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.d-checkbox {
+      display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    vertical-align: top;
+    $height: 20px;
+    $padding: 2px;
+    $border-radius:5px;
+    display: inline-block;
+    .d-checkbox-inner {
+        margin-top:4px;
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        width: $height;
+        height: $height;
+        background: white;
+        border: 1px solid gray;
+        border-radius: $border-radius;
+        // @debug $height - 2px - ($padding * 2);
+        i{
+            color:darken($checkedColor,15%);
+            position: absolute;
+            font-size:14px;
+            left: $padding;
+            top: $padding;
+            display: none;
+        }
+     
+    }
+    &.selected {
+        .d-checkbox-inner{
+           i{
+                display: inline-block;
+           }
+        }
+    }
+}

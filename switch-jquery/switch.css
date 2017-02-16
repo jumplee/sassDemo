@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1487242313895");
+  /* IE9*/
+  src: url("iconfont.eot?t=1487242313895#iefix") format("embedded-opentype"), url("./font/iconfont.woff?t=1487242313895") format("woff"), url("./font/iconfont.ttf?t=1487242313895") format("truetype"), url("./font/iconfont.svg?t=1487242313895#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-checkbox:before {
+  content: "\e677"; }
+
 .d-switch-inner {
   width: 52px;
   height: 31px;
@@ -20,9 +36,9 @@
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
 
-.d-switch-label {
+.d-label {
   display: inline-block;
-  line-height: 29px;
+  line-height: 30px;
   vertical-align: top;
   margin-left: 5px; }
 
@@ -55,10 +71,11 @@
     .d-switch.d-switch-anim.selected .d-switch-inner:before {
       transition: left 0.3s; }
 
-.d-checkbox {
+.d-radio {
+  display: flex;
   vertical-align: top;
   display: inline-block; }
-  .d-checkbox .d-checkbox-inner {
+  .d-radio .d-radio-inner {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -66,8 +83,9 @@
     height: 20px;
     background: white;
     border: 1px solid gray;
-    border-radius: 50%; }
-    .d-checkbox .d-checkbox-inner:before {
+    border-radius: 50%;
+    margin-top: 5px; }
+    .d-radio .d-radio-inner:before {
       position: absolute;
       width: 12px;
       height: 12px;
@@ -77,9 +95,46 @@
       background: #64bd63;
       border-radius: 50%;
       display: none; }
-  .d-checkbox .d-checkbox-label {
+  .d-radio .d-radio-label {
     display: inline-block;
     line-height: 20px;
     vertical-align: top; }
+  .d-radio.selected .d-radio-inner:before {
+    display: block; }
+
+.d-checkbox {
+  display: flex;
+  vertical-align: top;
+  display: inline-block; }
+  .d-checkbox .d-checkbox-inner {
+    margin-top: 4px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px; }
+    .d-checkbox .d-checkbox-inner i {
+      color: #40953f;
+      position: absolute;
+      font-size: 14px;
+      left: 2px;
+      top: 2px;
+      display: none; }
+  .d-checkbox.selected .d-checkbox-inner i {
+    display: inline-block; }
+
+.d-btn {
+  color: #64bd63;
+  font-size: 18px;
+  border: 1px solid #eee;
+  padding: 5px 16px;
+  background: #fafafa;
+  border-radius: 5px;
+  outline: 0; }
+  .d-btn:active {
+    color: #388337; }
 
 /*# sourceMappingURL=switch.css.map */

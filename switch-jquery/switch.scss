@@ -1,6 +1,8 @@
+@import "./font/iconfont" ;
 $radius:20px;
 $duration: .4s;
 $checkedColor: #64bd63;
+$lineHeight:30px;
 //$checkedColor: #005fbd;
 .d-switch-inner {
     width: 52px;
@@ -28,9 +30,9 @@ $checkedColor: #64bd63;
     }
 }
 
-.d-switch-label {
+.d-label {
     display: inline-block;
-    line-height: 29px;
+    line-height: $lineHeight;
     vertical-align: top;
     margin-left: 5px;
 }
@@ -85,41 +87,20 @@ $checkedColor: #64bd63;
     }
 }
 
-.d-checkbox {
-    vertical-align: top;
-    $height:20px;
-    $padding:3px;
-    $border-radius:50%;
-    display: inline-block;
-    
-    .d-checkbox-inner {
-        position:relative;
-        display: inline-block;
-        box-sizing:border-box;
-        width: $height;
-        height: $height;
-        background: white;
-        border: 1px solid gray;
-        border-radius: $border-radius;
-        @debug $height - 2px - ($padding * 2);
-        &:before{
-            position:absolute;
-            width:$height - 2px - ($padding * 2);
-            height:$height - 2px - ($padding * 2);
-            left:$padding;
-            top:$padding;
-            content:' ';
-            background: $checkedColor;
-            border-radius: $border-radius;
-            display: none;
-        }
-    }
-    .d-checkbox-label {
-        display: inline-block;
-        line-height:$height;
-        vertical-align: top;
-    }
-    &.selected{
-        
+
+@import "radio";
+@import "checkbox";
+
+
+.d-btn{
+    color:$checkedColor;
+    font-size:18px;
+    border:1px solid #eee;
+    padding:5px 16px;
+    background: #fafafa;
+    border-radius: 5px;
+    outline:0;
+    &:active{
+        color: darken($checkedColor,20%);
     }
 }

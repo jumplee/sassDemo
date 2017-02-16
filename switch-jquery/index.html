@@ -1,46 +1,68 @@
 <!doctype html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>仿ios7  switch</title>
+    <title>仿ios7 switch</title>
     <link rel="stylesheet" href="switch.css">
 </head>
-<body> 
-<span class="d-switch d-switch-animbg">
-    <div class="d-switch-inner"></div>
-</span> 
-<div class="d-switch d-switch-animbg" data-value="true">
-    <div class="d-switch-inner"></div>
-    <div class="d-switch-label">测试</div>
-</div>
-<span class="d-checkbox">
-     <div class="d-checkbox-inner"></div>
-    <div class="d-switch-label">修改内容</div>
-</span>
+
+<body>
+    <span class="d-switch d-switch-animbg">
+            <div class="d-switch-inner"></div>
+    </span>
+    <div class="d-switch d-switch-animbg" data-value="true">
+        <div class="d-switch-inner"></div>
+        <div class="d-label">测试</div>
+    </div>
+    <hr/>
+    <div class="d-radio">
+        <div class="d-radio-inner"></div>
+        <div class="d-label">修改内容</div>
+    </div>
+    <hr/>
+    <div class="d-checkbox" id="checkbox_agree">
+         <div class="d-checkbox-inner">
+
+             <i class="iconfont icon-checkbox"></i>
+         </div>
+        <div class="d-label">是否同意条款</div>
+    </div>
+
+    <hr/>
+    <button class="d-btn">提交</button>
     <!--<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>-->
     <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(function(){
-            $('.d-switch,.d-checkbox').each(function(){
-                var $this=$(this)
-                if($this.attr('data-value')){
+    //https://fatesinger.com/74438
+        $(function () {
+            $('.d-switch,.d-checkbox,d-radio').each(function () {
+                var $this = $(this)
+                if ($this.attr('data-value')) {
                     $this.addClass('selected');
-                    $this.data('value')==true
+                    $this.data('value', true)
+                }else{
+                      $this.data('value',false) 
                 }
             })
         })
-        $('.d-switch,.d-checkbox').on('click',function(){
-            var $this=$(this);
+        $('.d-switch,.d-checkbox,.d-radio').on('click', function () {
+            var $this = $(this);
             $this.toggleClass('selected')
-            if($this.data('value')===true){
-                $this.data('value',false)
-            }else{
-                $this.data('value',true)
+            if ($this.data('value') === true) {
+                $this.data('value', false)
+            } else {
+                $this.data('value', true)
             }
+        })
+
+        $('.d-btn').on('click',function(){
+            console.log($('#checkbox_agree').data('value'))
+            // $('#checkbox_agree').data('value');
         })
     </script>
 </body>
+
 </html>
