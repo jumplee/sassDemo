@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont";
-  src: url("iconfont.eot?t=1487242313895");
+  src: url("./font/iconfont.eot?t=1487242313895");
   /* IE9*/
-  src: url("iconfont.eot?t=1487242313895#iefix") format("embedded-opentype"), url("./font/iconfont.woff?t=1487242313895") format("woff"), url("./font/iconfont.ttf?t=1487242313895") format("truetype"), url("./font/iconfont.svg?t=1487242313895#iconfont") format("svg");
+  src: url("./font/iconfont.eot?t=1487242313895#iefix") format("embedded-opentype"), url("./font/iconfont.woff?t=1487242313895") format("woff"), url("./font/iconfont.ttf?t=1487242313895") format("truetype"), url("./font/iconfont.svg?t=1487242313895#iconfont") format("svg");
   /* iOS 4.1- */ }
 .iconfont {
   font-family: "iconfont" !important;
