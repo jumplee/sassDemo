@@ -9,11 +9,10 @@
   "devDependencies": {
     "autoprefixer": "^6.7.5",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
     "gulp-postcss": "^6.3.0",
     "gulp-px3rem": "^0.3.0",
-    "gulp.spritesmith": "^6.3.0",
-    "postcss": "^5.2.15"
+    "postcss": "^5.2.15",
+    "postcss-sprites": "^4.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

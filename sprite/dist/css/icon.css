@@ -1,0 +1,50 @@
+.icon {
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+.icon-checkbox {
+    background-image: url(../images/sprite.@2x.png);
+    background-position: 0px 0px;
+    background-size: 200px 100px;
+    width: 100px;
+    height: 100px;
+}
+.icon-checkbox:hover{
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg)
+}
+.icon-expression_1:hover{
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4)
+}
+.icon-expression_1 {
+    background-image: url(../images/sprite.@2x.png);
+    background-position: -100px 0px;
+    background-size: 200px 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-expression_5 {
+    background-image: url(../images/sprite.png);
+    background-position: 0px -286px;
+    background-size: 515px 486px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.img-3{
+    background-image: url(../images/sprite.png);
+    background-position: 0px 0px;
+    background-size: 515px 486px;
+    height: 200px;
+    width: 515px;
+    height: 286px;
+}

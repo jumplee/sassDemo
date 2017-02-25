@@ -1,0 +1,31 @@
+.icon {
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    transition: .3s ease all;
+}
+.icon-checkbox {
+    background-image: url(../images/icon/checkbox@2x.png);
+}
+.icon-checkbox:hover{
+    transform: rotate(30deg)
+}
+.icon-expression_1:hover{
+    transform: scale(1.4)
+}
+.icon-expression_1 {
+    background-image: url(../images/icon/Expression_1@2x.png);
+}
+
+.icon-expression_5 {
+    background: url(../images/icon/Expression_5.png);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.img-3{
+    background: url(../images/icon/retina-web-3.jpg);
+    height: 200px;
+}
