@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var sprites = require('postcss-sprites');
+var rename = require("gulp-rename");
 var post = require('postcss')
 var opts = {
   stylesheetPath: './dist',
@@ -23,36 +24,39 @@ gulp.task('prefix', function () {
 
 var updateRule = require('postcss-sprites/lib/core').updateRule;
 gulp.task('sprite', function () {
-  return gulp.src('./sprite/css/icon.css')
+  return gulp.src('./sprite/sass/icon.src.scss')
     .pipe(postcss([
-      autoprefixer({
-        browsers: [
-          'ios>7',
-          'android >4'
-        ],
-        cascade: false
-      }),
+      // autoprefixer({
+      //   browsers: [
+      //     'ios>7',
+      //     'android >4'
+      //   ],
+      //   cascade: false
+      // }),
       sprites({
         retina: true,
         padding: 3,
-        stylesheetPath: './sprite/dist/css',
-        spritePath: './sprite/dist/images/',
+        stylesheetPath: './sprite/css/',
+        spritePath: './sprite/images/',
         hooks: {
           onUpdateRule: function (rule, token, image) {
             // Use built-in logic for background-image & background-position
             updateRule(rule, token, image);
-       
-            ['width', 'height'].forEach(function (prop) {
-              rule.insertAfter(rule.last, post.decl({
-                prop: prop,
-                value: image.coords[prop] / image.ratio + 'px'
-              }));
-            });
+            //还是由自己来决定宽高吧
+            // ['width', 'height'].forEach(function (prop) {
+            //   rule.insertAfter(rule.last, post.decl({
+            //     prop: prop,
+            //     value: image.coords[prop] / image.ratio + 'px'
+            //   }));
+            // });
           }
         }
       })
     ]))
-    .pipe(gulp.dest('./sprite/dist/css'))
+    .pipe(rename(function (path) {
+      path.basename='icon'
+    }))
+    .pipe(gulp.dest('./sprite/sass'))
 })
 
 gulp.task('watch_sprite', function () {

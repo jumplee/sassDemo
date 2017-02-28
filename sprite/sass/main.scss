@@ -1,0 +1,20 @@
+@import 'icon';
+
+.icon-expression_4{
+    margin-left:150px;
+}
+.icon-expression_4.active{
+    animation:bounce .6s linear infinite;
+}
+@keyframes bounce{
+    from,to{
+        transform:translateX(0px);
+    }
+     10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-30px, 0, 0);
+  }
+    20%, 40%, 60%, 80% {
+    transform: translate3d(30px, 0, 0);
+  }
+
+}

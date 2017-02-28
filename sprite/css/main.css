@@ -1,0 +1,66 @@
+.icon {
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  transition: .3s ease all; }
+
+.icon-checkbox {
+  background-image: url(../images/sprite.@2x.png);
+  background-position: 0px 0px;
+  background-size: 300px 200px; }
+
+.icon-checkbox:hover {
+  transform: rotate(30deg); }
+
+.icon-expression_1:hover {
+  transform: scale(1.4); }
+
+.icon-expression_1 {
+  background-image: url(../images/sprite.@2x.png);
+  background-position: -100px 0px;
+  background-size: 300px 200px; }
+
+.icon-expression_5 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+  height: 250px;
+  display: inline-block; }
+
+.icon-expression_2:hover {
+  transform: skew(-20deg, 20deg); }
+
+.icon-expression_2 {
+  background-image: url(../images/sprite.@2x.png);
+  background-position: 0px -100px;
+  background-size: 300px 200px; }
+
+.icon-expression_3:hover {
+  transform: translate(30px, 30px); }
+
+.icon-expression_3 {
+  background-image: url(../images/sprite.@2x.png);
+  background-position: -100px -100px;
+  background-size: 300px 200px; }
+
+.icon-expression_4 {
+  background-image: url(../images/sprite.@2x.png);
+  background-position: -200px 0px;
+  background-size: 300px 200px; }
+
+.icon-expression_4 {
+  margin-left: 150px; }
+
+.icon-expression_4.active {
+  animation: bounce .6s linear infinite; }
+
+@keyframes bounce {
+  from,to {
+    transform: translateX(0px); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-30px, 0, 0); }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(30px, 0, 0); } }
+
+/*# sourceMappingURL=main.css.map */

@@ -11,6 +11,7 @@
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.3.0",
     "gulp-px3rem": "^0.3.0",
+    "gulp-rename": "^1.2.2",
     "postcss": "^5.2.15",
     "postcss-sprites": "^4.2.0"
   },

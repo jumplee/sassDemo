@@ -1,0 +1,54 @@
+.icon {
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all; }
+
+.icon-checkbox {
+  background-image: url(../images/sprite.@2x.png);
+  background-position: 0px 0px;
+  background-size: 200px 200px; }
+
+.icon-checkbox:hover {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg); }
+
+.icon-expression_1:hover {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4); }
+
+.icon-expression_1 {
+  background-image: url(../images/sprite.@2x.png);
+  background-position: -100px 0px;
+  background-size: 200px 200px; }
+
+.icon-expression_5 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+  height: 250px;
+  display: inline-block; }
+
+.icon-expression_2:hover {
+  -webkit-transform: skew(-20deg, 20deg);
+  -ms-transform: skew(-20deg, 20deg);
+  transform: skew(-20deg, 20deg); }
+
+.icon-expression_2 {
+  background-image: url(../images/sprite.@2x.png);
+  background-position: 0px -100px;
+  background-size: 200px 200px; }
+
+.icon-expression_3:hover {
+  -webkit-transform: translate(30px, 30px);
+  -ms-transform: translate(30px, 30px);
+  transform: translate(30px, 30px); }
+
+.icon-expression_3 {
+  background-image: url(../images/sprite.@2x.png);
+  background-position: -100px -100px;
+  background-size: 200px 200px; }

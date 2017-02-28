@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>合并多图</title>
-    <link rel="stylesheet" href="./dist/css/icon.css">
-    <!--<link rel="stylesheet" href="./css/icon.css">-->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
    <div class="icon icon-checkbox"></div>
    <div class="icon icon-expression_1"></div>
-    <div class="icon-expression_5"></div>
-    <div class="img-3"></div>
+   <div class="icon icon-expression_2"></div>
+   <div class="icon icon-expression_3"></div>
+   <br/>
+     <div class="icon icon-expression_4"></div>
+     <script>
+        document.getElementsByClassName('icon-expression_4')[0].addEventListener('click',function(){
+            if(this.classList.length>2){
+                this.classList.remove('active')
+            }else{
+            this.classList.add('active')
+            }
+
+        })
+     </script>
 </body>
 </html>
