@@ -4,7 +4,7 @@
   "description": "some sass demo for myself",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+   
   },
   "devDependencies": {
     "autoprefixer": "^6.7.5",
