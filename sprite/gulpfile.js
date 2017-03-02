@@ -14,7 +14,7 @@ gulp.task('sprite', function () {
       })
     ]))
     .pipe(rename(function (path) {
-      path.basename='icon'
+      path.basename = 'icon'
     }))
     .pipe(gulp.dest('./sass'))
 })
@@ -22,13 +22,13 @@ gulp.task('sprite', function () {
 gulp.task('watch_sprite', function () {
   gulp.watch('./sass/icon.src.scss', ['sprite'])
 })
-var mobileArray=[
-          'ios>7',
-          'android >4',
-          'and_uc>1',
-          'and_chr>1'
-        ]
-var pcArray=[
+var mobileArray = [
+  'ios>7',
+  'android >4',
+  'and_uc>1',
+  'and_chr>1'
+]
+var pcArray = [
   'ie >8',
   '>1%'
 ]
@@ -40,5 +40,8 @@ gulp.task('prefix', function () {
         cascade: false
       })
     ]))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(rename(function (path) {
+      path.basename = path.basename+'.dist'
+    }))
+    .pipe(gulp.dest('./css'))
 })
