@@ -8,33 +8,35 @@
 .icon-checkbox {
     background-image: url(../images/icon/checkbox@2x.png);
 }
-.icon-checkbox:hover{
-    transform: rotate(30deg)
-}
-.icon-expression_1:hover{
-    transform: scale(1.4)
-}
 .icon-expression_1 {
     background-image: url(../images/icon/Expression_1@2x.png);
 }
-
-.icon-expression_5 {
-    background: url(../images/icon/Expression_5.png);
-    height:250px;
-    display: inline-block;
-}
-.icon-expression_2:hover{
-    transform: skew(-20deg,20deg)
-}
 .icon-expression_2 {
     background-image: url(../images/icon/Expression_2@2x.png);
-}
-.icon-expression_3:hover{
-    transform: translate(30px,30px)
 }
 .icon-expression_3 {
     background-image: url(../images/icon/Expression_3@2x.png);
 }
 .icon-expression_4 {
     background-image: url(../images/icon/Expression_4@2x.png);
+}
+.icon-expression_5 {
+    background: url(../images/icon/Expression_5.png);
+    height:250px;
+    display: inline-block;
+}
+.icon-checkbox:hover{
+    transform: rotate(30deg)
+}
+
+.icon-expression_1:hover{
+    transform: scale(1.4)
+}
+
+.icon-expression_2:hover{
+    transform: skew(-20deg,20deg)
+}
+
+.icon-expression_3:hover{
+    transform: translate(30px,30px)
 }
